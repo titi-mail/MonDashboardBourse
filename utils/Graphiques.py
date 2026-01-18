@@ -71,14 +71,8 @@ def create_gauge(value, title, min_val, max_val, thresholds, metric_mode="higher
     fig.update_layout(
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(0,0,0,0)",
-        margin=dict(l=25, r=25, t=50, b=25),
-        height=160,
-        title={
-        'text': title,
-        'x': 0.5,
-        'xanchor': 'center',
-        'yanchor': 'top'
-        }
+        margin=dict(l=0, r=0, t=0, b=0),
+        height=60
     )
 
     return fig, color
