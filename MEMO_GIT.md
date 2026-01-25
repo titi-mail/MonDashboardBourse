@@ -5,6 +5,7 @@ Ce fichier sert de rappel pour les commandes à utiliser dans le terminal de VS 
 # 1. ☀️ LE MATIN (Avant de commencer)
 Toujours s'assurer d'avoir la dernière version (surtout si tu changes d'ordi).
 -> git pull
+-> source .venv/bin/activate
 
 # 2. 🌙 LA ROUTINE DE SAUVEGARDE (Le "Carton")
 À faire à chaque fois que tu finis une fonctionnalité ou avant d'arrêter de travailler.
@@ -44,3 +45,5 @@ J'ai tout cassé et je veux revenir à ma dernière sauvegarde propre :
 
     Voir l'historique de ce qui a été fait :
     -> git log (Appuie sur q pour quitter l'affichage du log)
+
+
