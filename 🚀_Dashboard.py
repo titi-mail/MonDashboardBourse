@@ -31,6 +31,7 @@ from utils.Fonctions_Autre import get_currency_symbol, translate_sector
 from utils.Indicateurs import calculate_ytd_performance
 from utils.Graphiques import create_gauge
 from utils.Analyse_Financiere import afficher_onglet_finance
+from utils.Glossaire.Onglet_Glossaire import afficher_onglet_glossaire
 
 # ------------------------------------
 # --- 00.3 - Réglage de notre page ---
@@ -99,7 +100,7 @@ with st.spinner('Chargement des données...'):
 # ----------------------------
 # --- CRÉATION DES ONGLETS ---
 # ----------------------------
-tab_dashboard, tab_finance = st.tabs(["📈 Tableau de Bord", "📚 Analyse fondamentale"])
+tab_dashboard, tab_finance, tab_glossaire = st.tabs(["📈 Tableau de Bord", "📚 Analyse fondamentale","📝 Glossaire"])
 # ----------------------------------
 # --- PREMIER ONGLET : DASHBOARD ---
 # ----------------------------------
@@ -214,6 +215,12 @@ with tab_dashboard:
 # --------------------------------------------
 with tab_finance:
     afficher_onglet_finance(stock, info)
+
+# --------------------------------------------
+# --- DEUXIEME ONGLET : ANALYSE FINANCIÈRE ---
+# --------------------------------------------
+with tab_glossaire:
+    afficher_onglet_glossaire()
 
 
 

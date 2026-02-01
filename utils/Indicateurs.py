@@ -10,7 +10,6 @@ Sommaire des indicateurs :
 
     - calculate_rsi : RSI (14 jours)
     - calculate_ytd_performance : calcule la variation en % par rapport à la FERMETURE de l'année N-1
-    - calculate_nopat : Net Operating Profit After Tax
 
 """
 
@@ -90,10 +89,7 @@ def calculate_ytd_performance(stock_object, current_price):
         print(f"Erreur calcul YTD : {e}")
         return 0.0
     
-# -------------
-# --- NOPAT ---
-# -------------
-def calculate_nopat(stock, default_tax_rate=0.25):
+
     """
     Calcule le NOPAT (Net Operating Profit After Tax) en utilisant la méthode précise :
     Tax Rate = Tax Provision / Pretax Income.
